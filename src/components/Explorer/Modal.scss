@@ -1,0 +1,55 @@
+#modalBackdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 998;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(15, 23, 42, 0.6);
+}
+
+#modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 999;
+
+	width: 300px;
+	background-color: #21335c;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+	border-radius: 5px;
+	padding: 2rem;
+
+	.title {
+		margin-bottom: 1rem;
+	}
+
+	.input {
+		margin-bottom: 2rem;
+		input {
+			width: 100%;
+			font-size: 2rem;
+			color: black;
+			padding: 0.5rem;
+			border-radius: 3px;
+		}
+	}
+
+	.buttons {
+		display: flex;
+		justify-content: space-between;
+		button {
+			&:last-child {
+				padding: 0.5rem;
+				background-color: #0f766e;
+				border-radius: 5px;
+				&:hover {
+					background-color: #118379;
+				}
+			}
+		}
+	}
+}

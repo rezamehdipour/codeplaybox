@@ -1,0 +1,82 @@
+#explorer {
+	padding: 1rem;
+	background-color: #334155;
+
+	.top {
+		display: flex;
+		justify-content: end;
+		margin-bottom: 1rem;
+		.operations {
+			display: flex;
+			gap: 1rem;
+		}
+	}
+
+	.empty {
+		opacity: 0.5;
+	}
+
+	.filesAndFolders {
+		.folder,
+		.file {
+			position: relative;
+			cursor: pointer;
+
+			& > .self {
+				display: grid;
+				grid-template-columns: 1fr min-content;
+				&:hover {
+					& > .info {
+						& > .name {
+							color: inherit;
+						}
+					}
+
+					& > .operations {
+						opacity: 1;
+					}
+				}
+
+				& > .info {
+					display: flex;
+					align-items: center;
+					gap: 1rem;
+					height: 100%;
+					margin-bottom: 0.7rem;
+					&:hover {
+					}
+
+					& > .name {
+						font-size: 1.5rem;
+						color: rgba(255, 255, 255, 0.6);
+					}
+
+					& > .fakeChildren {
+						width: 100%;
+					}
+				}
+
+				& > .operations {
+					display: flex;
+					gap: 1rem;
+					opacity: 0;
+					transition-duration: 0.2s;
+
+					& > button {
+						opacity: 0.5;
+						&:hover {
+							opacity: 1;
+						}
+					}
+				}
+			}
+
+			& > .children {
+				position: relative;
+				top: 20%;
+				// left: 5%;
+				padding-left: 5%;
+			}
+		}
+	}
+}
