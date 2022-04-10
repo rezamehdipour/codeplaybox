@@ -1,7 +1,7 @@
-# CodePlaybox
+# CodePlaybox - A very simpler version of Codesandbox
 
-React 17, Ace, IndexedDB (localbase), Scss
+React 17, Ace, IndexedDB (localbase), Scss.
 
-## Preview
+<a href="https://rezamehdipour.ir/codeplaybox">[ Live Preview ]</a>
 
-![preview](preview.png)
+![preview](preview.jpg)
